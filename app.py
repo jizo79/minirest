@@ -24,5 +24,9 @@ def show_user_id(user_id):
 def show_subpath(subpath):
     return 'Subpath %s' % subpath
 
+@app.route('/git')
+def show_build_from_git():
+    return 'Correctly build from git!'
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
